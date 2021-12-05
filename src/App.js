@@ -20,11 +20,11 @@ function App() {
       <Suspense fallback={<Spinner />}>
         <Routes>
           <Route
-            path="/"
+            path="/clone-instagram/"
             element={!loginState.isLogin ? <Login /> : <HomePage isHomePage />}
           />
           <Route
-            path={`/${localStorage.getItem("user")}`}
+            path={`/clone-instagram/${localStorage.getItem("user")}`}
             element={<HomePage />}
           />
           {/* <Route path={`*`} element={<div>Not found</div>} /> */}
