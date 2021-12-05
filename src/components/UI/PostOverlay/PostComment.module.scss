@@ -1,0 +1,23 @@
+.postComment {
+   border-bottom: 1px solid var(--grey-border);
+   border-top: 1px solid var(--grey-border);
+   flex: 1;
+   overflow: auto;
+   
+   .commentItem {
+      display: flex;
+      align-items: center;
+      min-height: 45px;
+      padding: 10px 0 5px;
+
+      &:last-child {
+         padding-bottom: 10px;
+      }
+      >div {
+         min-height: 45px !important;
+      }
+      > p {
+         margin-left: -10px;
+      }
+   }
+}

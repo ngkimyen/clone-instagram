@@ -1,0 +1,35 @@
+@use 'PostItemDetail.module' as *;
+
+.commentInput {
+  @include padding-post;
+  margin-bottom: 0;
+  display: flex;
+  height: 55px;
+  align-items: center;
+  border-top: 1px solid var(--grey-border);
+
+  form {
+    margin-left: 14px;
+    flex: 1;
+    display: flex;
+    input {
+      flex: 1;
+      &::placeholder {
+        color: #8E8E8E;
+        font-size: 1.4rem
+      }
+    }
+
+    button {
+      background-color: transparent;
+      font-weight: 600;
+      &.disable {
+        color: #C6DFFA;
+        cursor: unset;
+      }
+      &.active {
+        color:#4193EF;
+      }
+    }
+  }
+}

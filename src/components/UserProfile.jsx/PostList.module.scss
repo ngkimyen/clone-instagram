@@ -1,0 +1,10 @@
+
+.postList {
+   display: flex;
+   flex-wrap: wrap;
+   margin:0 -15px;
+
+   &.isMobile {
+   margin: 16px -2px 0;
+   }
+}

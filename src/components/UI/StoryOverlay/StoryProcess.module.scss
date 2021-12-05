@@ -1,0 +1,26 @@
+
+.storyProcess {
+   width: 100%;
+   height: 3px;
+   margin-bottom: 16px;
+   border-radius: 50px;
+   overflow: hidden;
+   position: relative;
+
+   .background {
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,.35);
+   }
+
+   .runningProcess {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      height: 100%;
+      width: 0%;
+      transition: width 0.2s linear;
+   }
+}

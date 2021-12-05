@@ -1,0 +1,21 @@
+@use './UserOption.module.scss' as *;
+
+.overlay {
+   right: -50px;
+   width: 485px;
+   @include overlay;
+   
+   &.isMobile {
+      width: 395px;
+   }
+   &::after {
+      right: 54px;
+      @include triangle-overlay
+   }
+   
+   .container {
+      overflow-y: scroll;
+   max-height: 360px;
+
+   }
+}

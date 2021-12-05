@@ -1,0 +1,28 @@
+
+.storyFooter {
+   flex: 1 ;
+    display: flex;
+    align-items: flex-end;
+
+   > div {
+      display: flex;
+      flex: 1;
+      align-items: center;
+
+      > input {
+         flex: 1 ;
+         height: 45px;
+         border-radius: 30px;
+         background-color: transparent;
+         border: 1px solid white;
+         margin-right: 8px;
+         padding: 16px;
+
+         &::placeholder {
+            color: white;
+            font-weight: 500;
+         }
+
+      }
+  }
+   }

@@ -1,0 +1,71 @@
+
+@mixin overlay {
+  background: white;
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 1px #EDEDED;
+  cursor: default;
+  z-index: 100;
+  top: 38px;
+  max-width: var(--header-height);
+
+}
+
+@mixin triangle-overlay {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  transform: rotate(-45deg);
+  border-top: 1px solid #F1F1F1;
+  border-right: 1px solid #F1F1F1;
+  z-index: 99;
+}
+
+.userOption {
+  width: 230px;
+  height: 200px;
+  right: -20px;
+  @include overlay;
+
+  &::after {
+    right: 26px;
+   @include triangle-overlay;
+  }
+
+  .optionItem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px 14px;
+    overflow: hidden;
+    transition: 0.3s;
+
+    &:first-child {
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-top: 1px solid#D6D6D6;
+      width: 100%;
+      .optionItemText {
+        margin-left: unset;
+      }
+    }
+
+
+    &:hover {
+      background-color: var(--light-grey-background);
+
+    }
+    .optionItemText {
+      margin-left: 10px;
+      font-size: 1.3rem;
+      color: #5a5a5a;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+
+.header {
+  border-bottom: 1px solid var(--light-grey-color);
+
+  .headerContainer {
+    max-width: var(--header-width);
+    padding: 0 var(--header-padding);
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    height: 52px;
+    justify-content: space-between;
+  }
+}

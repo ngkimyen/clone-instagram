@@ -1,0 +1,31 @@
+@mixin navBtn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1.3rem;
+}
+
+@mixin flex-alignCenter {
+   display: flex;
+    align-items: center;
+}
+.story {
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  @include flex-alignCenter;
+
+  .storyList {
+   @include flex-alignCenter;
+   overflow: hidden;
+   
+   &.isMobile {
+     overflow: auto;
+     &::-webkit-scrollbar {
+       display: none;
+     }
+   }
+  }
+}
