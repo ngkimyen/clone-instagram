@@ -7,13 +7,20 @@ import { BrowserRouter } from "react-router-dom";
 import LoginProvider from "./store/LoginProvider";
 
 ReactDOM.render(
+<<<<<<< HEAD
   <React.StrictMode>
+=======
+>>>>>>> 74116d9099fb08d7106f6ab9d1592e7da8910975
     <BrowserRouter>
       <LoginProvider>
         <App />
       </LoginProvider>
+<<<<<<< HEAD
     </BrowserRouter>
   </React.StrictMode>,
+=======
+    </BrowserRouter>,
+>>>>>>> 74116d9099fb08d7106f6ab9d1592e7da8910975
   document.getElementById("root")
 );
 

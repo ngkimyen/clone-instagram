@@ -48,6 +48,10 @@ const StoryDetail = ({ displayedStory, onNext, onPrev, index, total }) => {
 
   const handleMouseDown = (e) => {
     setInterval(() => (timer += 1), 1000);
+<<<<<<< HEAD
+=======
+    console.log(timer);
+>>>>>>> 74116d9099fb08d7106f6ab9d1592e7da8910975
   };
 
   return (
