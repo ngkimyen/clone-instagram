@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import React, { useEffect, useState } from "react";
->>>>>>> 74116d9099fb08d7106f6ab9d1592e7da8910975
 import Posts from "./Posts";
 import Story from "./Story";
 import classes from "./NewFeed.module.scss";
@@ -12,11 +8,6 @@ import useViewPort from "../../../custom-hooks/useViewPort";
 
 const NewFeed = () => {
   const { isTabletMobile, isMobile } = useViewPort();
-<<<<<<< HEAD
-
-=======
-  console.log(isTabletMobile)
->>>>>>> 74116d9099fb08d7106f6ab9d1592e7da8910975
   return (
     <section className={clsx(classes.newFeed, {[classes.isMobile] : isMobile})}>
       <div
