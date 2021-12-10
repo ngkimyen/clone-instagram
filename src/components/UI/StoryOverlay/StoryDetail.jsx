@@ -46,19 +46,15 @@ const StoryDetail = ({ displayedStory, onNext, onPrev, index, total }) => {
 
   let timer = 0;
 
-  const handleMouseDown = (e) => {
-    setInterval(() => (timer += 1), 1000);
-<<<<<<< HEAD
-=======
-    console.log(timer);
->>>>>>> 74116d9099fb08d7106f6ab9d1592e7da8910975
-  };
+  // const handleMouseDown = (e) => {
+  //   setInterval(() => (timer += 1), 1000);
+  // };
 
   return (
     <div
       ref={storyRef}
       onMouseUp={handleClick}
-      onMouseDown={handleMouseDown}
+      // onMouseDown={handleMouseDown}
       className={clsx(classes.storyDetail, { [classes.isMobile]: isMobile })}
     >
       <img src={displayedStory.post} className={classes.post} />
