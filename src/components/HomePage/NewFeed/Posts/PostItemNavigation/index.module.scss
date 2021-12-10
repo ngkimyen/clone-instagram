@@ -1,0 +1,30 @@
+.postItemNavigation {
+  margin: 6px 16px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  svg {
+    cursor: pointer;
+    transition: 0.3s;
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+    &.clicked:hover {
+      opacity: unset
+    }
+
+    &.clicked {
+      animation: pump 0.2s ease-out;
+    }
+  }
+}
+
+@keyframes pump{
+	to { transform: scale(1.2); }
+}

@@ -1,0 +1,94 @@
+$modal-width: 390px;
+
+.storyDetail {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: $modal-width;
+  height: calc($modal-width * 1.7);
+  background-color: #fff;
+  border-radius: 10px;
+
+  &.isMobile {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+
+    .post {
+      border-radius: 0
+    }
+  }
+
+  .post {
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .userWrap {
+        display: flex;
+        align-items: center;
+
+        > img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        > p {
+          font-weight: 600;
+          color: white;
+        }
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        > svg {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 30px;
+      background-color: #333333;
+      border-radius: 50%;
+      // left: -30px;
+
+      &[class*="next"] {
+        right: -60px;
+      }
+      &[class*="prev"] {
+        left: -30px;
+      }
+
+      &:hover,
+      &:active {
+        background-color: rgb(245, 243, 243);
+      }
+
+
+    }
+  }
+}

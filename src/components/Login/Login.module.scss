@@ -1,0 +1,87 @@
+
+.login {
+  justify-content: center;
+  margin: 32px auto 0;
+  max-width: 935px;
+  padding-bottom: 32px;
+  width: 100%;
+  display: flex;
+
+  .sideImg {
+    flex-basis: 454px;
+    position: relative;
+  }
+  .phoneMockup {
+    width: 100%;
+  }
+  .phoneImg {
+    position: absolute;
+    width: 240px;
+    height: 427px;
+    top: 100px;
+    left: 151px;
+    &.appear-enter-active {
+      animation: fadeIn 0.3s ease-in-out
+    }
+    
+    &.appear-exit-active {
+      animation: fadeOut 0.3s ease-in-out
+    }
+  }
+
+  .userSection {
+    width: 350px;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    
+    .loginSection {
+      border-radius : 2px;
+      padding: 10px 43px;
+      margin: 10px 0;
+      border: 1px solid var(--light-grey-color);
+
+      .typoLogo {
+        width: 175px;
+        height: 50px;
+        margin: 22px auto;
+        display: block;
+      }
+    }
+
+      .option {
+        margin: 8px 0;
+        display: flex;
+        justify-content: space-between;
+        .line {
+          color: var(--light-grey-color);
+          transform: translateY(-35%)
+        }
+        .text {
+          font-weight: 600;
+          color: #807e7e;
+        }
+      }
+
+      .loginLink {
+        text-align: center;
+        margin-bottom: 20px;
+        
+        .fbLogin {
+          display: block;
+          color: #334c8b;
+          font-weight: 600;
+          margin: 20px auto;
+
+          i {
+            font-size: 1.8rem;
+            padding-right: 8px;
+          }
+        }
+
+        .forgot {
+          color:#244371;
+          font-size: 1.2rem;
+        }
+      }
+  }
+}

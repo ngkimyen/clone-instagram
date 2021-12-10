@@ -1,0 +1,39 @@
+@use "PostItemDetail.module" as *;
+
+.userInfo {
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+
+  &.isComment {
+    min-height: 45px;
+  }
+  .userInfoWrap {
+    display: flex;
+    // align-items: center;
+
+    .avatarWrap {
+      // display: flex;
+      // align-items: center;
+      .avatar {
+        margin-right: 12px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+    }
+
+    .contentWrap {
+      flex: 1;
+      .userName {
+        @include text-style;
+      }
+    }
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}

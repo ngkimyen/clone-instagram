@@ -1,0 +1,23 @@
+@use 'PostItemDetail.module' as *;
+
+.postItemComment {
+  display: flex;
+  justify-content: space-between;
+  @include padding-post;
+
+  .userWrap {
+    display: flex;
+
+    .userName {
+      @include text-style;
+    }
+  }
+
+  span > .clicked {
+    animation: pump 0.2s ease-out;
+  }
+}
+
+@keyframes pump{
+	to { transform: scale(1.2); }
+}

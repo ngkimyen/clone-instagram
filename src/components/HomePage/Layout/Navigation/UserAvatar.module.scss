@@ -1,0 +1,26 @@
+$avaWidth: 26px;
+
+@use 'Navigation.module' as *;
+
+.userAvatarIcon {
+  @include navIcon;
+  border: 1px solid transparent;
+  width: calc($avaWidth + 2px);
+  height: calc($avaWidth + 2px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    border: 1px solid black;
+  }
+}
+
+.userAvatar {
+  overflow: hidden;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+
+}

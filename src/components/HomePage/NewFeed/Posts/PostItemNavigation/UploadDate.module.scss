@@ -1,0 +1,7 @@
+@use 'PostItemDetail.module' as *;
+
+.date {
+  @include padding-post;
+  color: rgba(var(--f52,142,142,142),1);
+  font-size: 12px;
+}

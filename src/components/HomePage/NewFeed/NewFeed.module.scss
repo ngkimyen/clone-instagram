@@ -1,0 +1,21 @@
+.newFeed {
+  padding-top: 30px;
+  max-width: calc(var(--header-width) - (2 * (var(--header-padding))));
+  margin: auto;
+  display: flex;
+  &.isMobile {
+    padding-top: 0;
+  }
+  .content {
+    max-width: 615px;
+    margin-right: 30px;
+
+    &.center {
+      margin: 0 auto !important;
+    }
+
+    &.isMobile {
+      width: 100%;
+    }
+  }
+}

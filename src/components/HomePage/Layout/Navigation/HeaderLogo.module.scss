@@ -1,0 +1,13 @@
+.typoImg {
+  height: 100%;
+  padding-top: 15px;
+  flex: 2;
+  
+  .imgWrapper {
+    width: 100%;
+
+    img {
+      width: 110px;
+    }
+  }
+} 

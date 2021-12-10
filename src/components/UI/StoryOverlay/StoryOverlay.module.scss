@@ -1,0 +1,36 @@
+$position: 20px;
+
+@mixin element {
+  position: absolute;
+  top: $position;
+}
+
+@mixin noBackdropOverlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.storyOverlay {
+  @include noBackdropOverlay;
+  overflow: hidden;
+  scroll-behavior: none;
+   background-color: #191919;
+
+  .logo {
+    @include element;
+    left: $position;
+    width: 100px;
+    height: auto;
+  }
+
+  > svg {
+   @include element;
+   right: $position;
+  }
+
+}

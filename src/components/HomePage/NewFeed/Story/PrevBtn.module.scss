@@ -1,0 +1,5 @@
+@use './Story.module.scss' as *;
+.prevBtn {
+   @include navBtn;
+   left: 10px;
+ }

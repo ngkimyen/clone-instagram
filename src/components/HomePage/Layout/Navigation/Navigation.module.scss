@@ -1,0 +1,19 @@
+@mixin navIcon {
+  margin-left: 22px;
+  cursor: pointer;
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.navigation {
+  display: inline-flex;
+  justify-content: flex-end;
+  flex: 2;
+  align-items: center;
+
+  .navIcon {
+    @include navIcon;
+    position: relative;
+  }
+}

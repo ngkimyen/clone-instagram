@@ -1,0 +1,40 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  font-size: 1.3rem;
+
+  input {
+    margin-bottom: 7px;
+    height: 38px;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    padding-left: 7px;
+    background-color: #fafafa;
+    outline: none;
+    position: relative;
+
+    &::placeholder {
+      color: #8f8f8f;
+    }
+
+    &:focus {
+      border: 1px solid #a8a3a3;
+    }
+  }
+
+  button {
+    margin: 7px 0 10px;
+    border: none;
+    height: 34px;
+    border-radius: 5px;
+    color: #fff;
+    &.disabled {
+      background-color: #c6defa;
+    }
+    &.active {
+      background-color:#4193EF;
+      cursor: pointer;
+    }
+  } 
+}

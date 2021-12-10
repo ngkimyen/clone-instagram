@@ -1,0 +1,67 @@
+@mixin button {
+  color: var(--blue-button-color);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.userSideBar {
+  width: 100%;
+
+  .userDetail {
+    padding: 24px 0;
+    display: flex;
+    img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .userInfo {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+
+      .userName {
+        font-size: 1.3rem;
+        line-height: 2rem;
+
+        h4 {
+          font-weight: 500;
+          cursor: pointer;
+        }
+
+        p {
+          color: var(--grey-text-color);
+        }
+      }
+
+      button {
+        @include button;
+      }
+    }
+  }
+
+  .suggestion {
+    .header {
+      display: flex;
+      font-size: 1.3rem;
+      justify-content: space-between;
+
+      .suggestionText {
+        color: var(--grey-text-color);
+        font-weight: 600;
+      }
+
+      .seeMore {
+        font-weight: 500;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+    }
+
+    .suggestionList {
+      margin-top: 12px;
+    }
+  }
+}

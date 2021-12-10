@@ -1,0 +1,12 @@
+
+.container {
+   max-width: var(--header-width);
+   padding: 0 var(--header-padding);
+   margin: 0 auto;
+   min-height: 100vh;
+   position: relative;
+
+   &.isMobile {
+      padding : 0
+   }
+}

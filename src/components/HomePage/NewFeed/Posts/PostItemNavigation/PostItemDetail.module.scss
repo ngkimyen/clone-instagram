@@ -1,0 +1,26 @@
+@mixin text-style {
+  font-weight: 600;
+  color: black;
+  font-size: 1.4rem;
+  margin-right: 8px;
+}
+
+@mixin padding-post {
+  padding: 0 16px;
+  margin-bottom: 8px;
+}
+.postItemDetail {
+  @include padding-post;
+  .likes {
+    @include text-style;
+    margin-bottom: 8px;
+  }
+
+  .postContent {
+    display: flex;
+
+    .userNameInDetail {
+      @include text-style;
+    }
+  }
+}
