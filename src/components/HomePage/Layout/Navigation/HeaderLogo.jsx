@@ -7,7 +7,7 @@ import classes from "./HeaderLogo.module.scss";
 const HeaderLogo = () => {
   return (
     <div className={classes.typoImg}>
-      <Link to="/">
+      <Link to='/clone-instagram/'>
         <div className={classes.imgWrapper}>
           <img src={TypoImg} alt="Instagram" />
         </div>
