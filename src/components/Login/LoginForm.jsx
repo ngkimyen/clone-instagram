@@ -31,9 +31,9 @@ const LoginForm = () => {
       <input
         ref={userNameInput}
         type="text"
-        placeholder="Phone number, username, or email"
+        placeholder="Type your name"
       />
-      <input ref={passwordInput} type="password" placeholder="Password" />
+      <input ref={passwordInput} type="password" placeholder="Type anything greater than 6 characters !!! " />
       <button
         disabled={!btnIsActive}
         className={btnIsActive ? classes.active : classes.disabled}
