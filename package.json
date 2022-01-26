@@ -1,8 +1,8 @@
 {
-  "name": "clone-instagram",
+  "name": "instagram-clone",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ngkimyen.github.io/clone-instagram/",
+  "homepage": "https://ngkimyen.github.io/instagram-clone/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^11.2.7",
